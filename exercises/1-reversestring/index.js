@@ -14,21 +14,21 @@
 
 // Method-2
 
-function reverse(str) {
-    let reversed = '';
-    for (let ch of str) {
-        reversed = ch + reversed;
-    }
-    return reversed;
-}
+// function reverse(str) {
+//     let reversed = '';
+//     for (let ch of str) {
+//         reversed = ch + reversed;
+//     }
+//     return reversed;
+// }
 
 // Method-3
 
-// function reverse(str) {
-//     // return str.split('').reduce((reversed, ch) => {
-//     //     return ch + reversed;
-//     // }, '');
-//     return str.split('').reduce((reversed, ch) => ch + reversed, '');
-// }
+function reverse(str) {
+    // return str.split('').reduce((reversed, ch) => {
+    //     return ch + reversed;
+    // }, '');
+    return str.split('').reduce((reversed, ch) => ch + reversed, '');
+}
 
 module.exports = reverse;
